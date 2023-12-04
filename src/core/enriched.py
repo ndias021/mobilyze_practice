@@ -46,7 +46,7 @@ class EnrichedJob(Base):
             "Latitude",
             "Population in 2006",
             "Population in 2021",
-            "Relative changes"]].to_csv(f"{self.target}attachment_1.csv")
+            "Relative changes"]].to_csv(f"{self.target}attachment_1.csv", index=False)
         final_results[[
             "Average population per 1sq km in 2021",
             "Median population per 1sq km in 2021"]].to_csv(f"{self.target}attachment_2.csv", index=False)
